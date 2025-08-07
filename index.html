@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-8 bg-white text-gray-800">
+
+    <!-- Tabs Section -->
+    <div class="max-w-2xl mx-auto mb-12">
+        <h1 class="text-2xl font-bold mb-6">Tab Component</h1>
+
+        <div>
+            <div class="flex border-b border-gray-200">
+                <button
+                    class="tab-btn py-2 px-4 font-medium text-gray-500 hover:text-blue-600 focus:outline-none border-b-2 border-transparent hover:border-blue-300 transition active"
+                    data-tab="tab1">Tab 1</button>
+                <button
+                    class="tab-btn py-2 px-4 font-medium text-gray-500 hover:text-blue-600 focus:outline-none border-b-2 border-transparent hover:border-blue-300 transition"
+                    data-tab="tab2">Tab 2</button>
+                <button
+                    class="tab-btn py-2 px-4 font-medium text-gray-500 hover:text-blue-600 focus:outline-none border-b-2 border-transparent hover:border-blue-300 transition"
+                    data-tab="tab3">Tab 3</button>
+            </div>
+
+            <div class="mt-4">
+                <div id="tab1" class="tab-pane p-4 bg-gray-50 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2">Tab 1 Content</h3>
+                    <p>This is the content for tab 1.</p>
+                </div>
+                <div id="tab2" class="tab-pane p-4 bg-gray-50 rounded-lg hidden">
+                    <h3 class="font-bold text-lg mb-2">Tab 2 Content</h3>
+                    <p>This is the content for tab 2.</p>
+                </div>
+                <div id="tab3" class="tab-pane p-4 bg-gray-50 rounded-lg hidden">
+                    <h3 class="font-bold text-lg mb-2">Tab 3 Content</h3>
+                    <p>This is the content for tab 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-2xl font-bold mb-6">Accordion Component</h1>
+
+        <div class="space-y-2">
+            <!-- Accordion Items -->
+            <div class="accordion-item border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                    class="accordion-header w-full flex justify-between items-center p-4 font-medium text-left hover:bg-gray-50 transition">
+                    <span>Accordion Item 1</span>
+                    <svg class="accordion-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="accordion-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                    <p>This is the content for the first accordion item.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                    class="accordion-header w-full flex justify-between items-center p-4 font-medium text-left hover:bg-gray-50 transition">
+                    <span>Accordion Item 2</span>
+                    <svg class="accordion-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="accordion-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                    <p>This is the content for the second accordion item.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                    class="accordion-header w-full flex justify-between items-center p-4 font-medium text-left hover:bg-gray-50 transition">
+                    <span>Accordion Item 3</span>
+                    <svg class="accordion-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="accordion-content hidden p-4 bg-gray-50 border-t border-gray-200">
+                    <p>This is the content for the third accordion item.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="max-w-2xl mx-auto mb-12 my-5">
+        <div class="text-center">
+            <div id="clock"
+                class="text-1xl md:text-3xl lg:text-3xl font-bold text-black p-8 rounded-2xl shadow-2xl border-2 border-black">
+                <span id="time">10:30:05 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
